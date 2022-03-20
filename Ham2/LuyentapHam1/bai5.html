@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let nhap = prompt("Nhập ngôi sao muốn tìm kiếm:");
+        let star = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+        let con = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+        function tim(a) {
+            let x = star.indexOf(a);
+            if (x == -1) {
+                return  "Không có ngôi sao cần tìm.";
+            } else {
+                return "Ngôi sao " + star[x] + " thuộc chòm sao " + con[x];
+            }
+        }
+        let kq = tim(nhap);
+        document.write(kq);
+    </script>
+</body>
+</html>

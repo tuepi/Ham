@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input id="nhap" type="text"><br>
+    <button onclick="chuVi(banKinh)">Chu Vi</button>
+    <button onclick="dienTich(banKinh)">Diện Tích</button>
+    <script>
+        let banKinh = document.getElementById("nhap").value;
+
+        function dienTich(bk) {
+            document.write(bk * bk * 3.14);
+        }
+        function chuVi(bk) {
+            document.write(2 * bk * 3.14);
+        }
+        // let a = dienTich(banKinh);
+        // let b = chuVi(banKinh);
+        // document.write("Diện tích là " + a + "<br> Chu vi là " + b);
+    </script>
+</body>
+</html>

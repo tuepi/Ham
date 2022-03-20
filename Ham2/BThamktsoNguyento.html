@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function kiemTra(a) {
+            let check = "Là số nguyên tố."
+            for (let i = 2; i < a; i++) {
+                if (a % i == 0) {
+                    check = "Không phải là số nguyên tố."
+                    break;
+                }
+            }
+            alert(check);
+        }
+        let b = prompt("Nhập vào số cần kiểm tra:");
+        kiemTra(b);
+    </script>
+</body>
+</html>

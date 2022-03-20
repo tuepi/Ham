@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let a = +prompt("Nhập vào số nguyên thứ nhất");
+        let b = +prompt("Nhập vào số nguyên thứ hai");
+        let c = +prompt("Nhập vào số nguyên thứ ba");
+        function soSanh(x,y,z) {
+            if (x < y && x < z) {
+                // alert(x + ' là số nhỏ nhất.');
+                return x;
+            }
+            if (y < x && y < z) {
+                // alert(y + ' là số nhỏ nhất.');
+                return y;
+            }
+            if (z < x && z < y) {
+                // alert(z + ' là số nhỏ nhất.');
+                return z;
+            }
+        }
+        // soSanh(a,b,c);
+        document.write(soSanh(a,b,c)+ " là số nhỏ nhất.");
+    </script>
+</body>
+</html>

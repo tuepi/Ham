@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="text" id="nhap">
+    <select>
+        <option id="1">Meter to Feet</option>
+        <option id="2">Feet to Meter</option>
+    </select>
+    <button onclick="chuyen(a.value)">Đổi</button>
+    <p id="hienThi"></p>
+    <script>
+        let a = document.getElementById("nhap");
+        let kq = document.getElementById("hienThi");
+        let m = document.getElementById("1");
+        let f = document.getElementById("2");
+       function chuyen(x) {
+            if (m) {
+                kq.innerHTML = x * 3.729;
+            }
+            else if (f) {
+                kq.innerHTML = x * 0.305;
+            }
+       }
+    </script>
+</body>
+</html>

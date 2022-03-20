@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="sp">
+<button onclick="them()" id="add">Thêm</button>
+<div id="sl"></div>
+<div id="list"></div>
+<script>
+    let slView = document.getElementById("sl");
+    let dlView = document.getElementById("list");
+    let add = document.getElementById("sp");
+    let ds = ['a','b','c','d','e'];
+    hien();
+    function them() {
+        let tensp = add.value;
+        ds.push(tensp);
+        hien();
+        add.value = '';
+    }
+    function hien() {
+        slView.innerHTML = ds.length + " sản phẩm";
+        let a = "";
+        for (let i = 0; i < ds.length; i++) {
+            a += ds[i] + '<br>';
+        }
+        dlView.innerHTML = a;
+    }
+</script>
+</body>
+</html>

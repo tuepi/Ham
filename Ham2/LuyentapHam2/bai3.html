@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--    <input id="nhap" type="text">-->
+<!--    <button onclick="tinh(a)">Tính</button>-->
+<!--    <p id="ccc"></p>-->
+
+    <script>
+
+        // let a = document.getElementById("nhap");
+        // let b = document.getElementById("ccc");
+        // function tinh(a) {
+        //
+        //     let giaiThua = 1;
+        //     for (let i = 1; i <= a.value; i++) {
+        //         giaiThua *= i;
+        //     }
+        //     b.innerHTML = 'Giai thừa là ' + giaiThua;
+        // }
+
+        let a = +prompt("nhập")
+        function fun1(x) {
+            if (x == 1) {
+                return 1;
+            } else {
+               return x * fun1(x-1);
+            }
+        }
+        let kq = fun1(a);
+        document.write(kq);
+    </script>
+</body>
+</html>

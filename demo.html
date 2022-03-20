@@ -1,0 +1,104 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--&lt;!&ndash;<script>&ndash;&gt;-->
+<!--&lt;!&ndash;    // function multiplyNums(x) {&ndash;&gt;-->
+<!--&lt;!&ndash;    //      x * 2;&ndash;&gt;-->
+<!--&lt;!&ndash;    // }&ndash;&gt;-->
+<!--&lt;!&ndash;    // let theNumber = 10;&ndash;&gt;-->
+<!--&lt;!&ndash;    // let result = multiplyNums(theNumber);&ndash;&gt;-->
+<!--&lt;!&ndash;    // // alert(result);&ndash;&gt;-->
+<!--&lt;!&ndash;    // let a = 6;&ndash;&gt;-->
+<!--&lt;!&ndash;    // function func1(a){&ndash;&gt;-->
+<!--&lt;!&ndash;    //     if(a == 2){&ndash;&gt;-->
+<!--&lt;!&ndash;    //         return 2;&ndash;&gt;-->
+<!--&lt;!&ndash;    //     }&ndash;&gt;-->
+<!--&lt;!&ndash;    //     return a * func1(a - 1);&ndash;&gt;-->
+<!--&lt;!&ndash;    // }&ndash;&gt;-->
+<!--&lt;!&ndash;    // document.write(func1(a));&ndash;&gt;-->
+<!--&lt;!&ndash;    // let a = 5;&ndash;&gt;-->
+<!--&lt;!&ndash;    // let b = 10;&ndash;&gt;-->
+
+<!--&lt;!&ndash;    // function sw(a,b) {&ndash;&gt;-->
+<!--&lt;!&ndash;    //     let temp = a;&ndash;&gt;-->
+<!--&lt;!&ndash;    //     a = b;&ndash;&gt;-->
+<!--&lt;!&ndash;    //     b = temp;&ndash;&gt;-->
+<!--&lt;!&ndash;    //     document.write("a = " + a + ", b = " + b);&ndash;&gt;-->
+<!--&lt;!&ndash;    // }&ndash;&gt;-->
+<!--&lt;!&ndash;    // sw(5, 10);&ndash;&gt;-->
+<!--&lt;!&ndash;    // document.write(sw());&ndash;&gt;-->
+
+<!--&lt;!&ndash;    // function fun(a) {&ndash;&gt;-->
+<!--&lt;!&ndash;    //      let b = a * 2;&ndash;&gt;-->
+<!--&lt;!&ndash;    //     alert(b);&ndash;&gt;-->
+<!--&lt;!&ndash;    // }&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;        <p>&ndash;&gt;-->
+<!--&lt;!&ndash;            <label>Fahrenheit</label>&ndash;&gt;-->
+<!--&lt;!&ndash;            <input id="inputFahrenheit" type="number" placeholder="Fahrenheit"&ndash;&gt;-->
+<!--&lt;!&ndash;                   onInput="temperatureConverter(this.value)"&ndash;&gt;-->
+<!--&lt;!&ndash;                   onChange="temperatureConverter(this.value)">&ndash;&gt;-->
+<!--&lt;!&ndash;        </p>&ndash;&gt;-->
+<!--&lt;!&ndash;        <p>Celsius: <span id="outputCelsius"></span></p>&ndash;&gt;-->
+
+<!--&lt;!&ndash;    <script>&ndash;&gt;-->
+
+<!--&lt;!&ndash;        function temperatureConverter(valNum) {&ndash;&gt;-->
+<!--&lt;!&ndash;            valNum = parseFloat(valNum);&ndash;&gt;-->
+<!--&lt;!&ndash;            document.getElementById("outputCelsius").innerHTML = (valNum-32) / 1.8;&ndash;&gt;-->
+<!--&lt;!&ndash;        }&ndash;&gt;-->
+
+<!--&lt;!&ndash;    </script>&ndash;&gt;-->
+
+<!--&lt;!&ndash;    //&ndash;&gt;-->
+<!--&lt;!&ndash;    // function swap(a, b) {&ndash;&gt;-->
+<!--&lt;!&ndash;    //     var temp = a;&ndash;&gt;-->
+<!--&lt;!&ndash;    //     a = b;&ndash;&gt;-->
+<!--&lt;!&ndash;    //     b = temp;&ndash;&gt;-->
+<!--&lt;!&ndash;    //     // return document.write("a = " + a + ", b = " + b);&ndash;&gt;-->
+<!--&lt;!&ndash;    //     // return a*b;&ndash;&gt;-->
+<!--&lt;!&ndash;    //    // return document.write('duc dep trai');&ndash;&gt;-->
+<!--&lt;!&ndash;    // }&ndash;&gt;-->
+<!--&lt;!&ndash;    // var a = 5;&ndash;&gt;-->
+<!--&lt;!&ndash;    // var b = 10;&ndash;&gt;-->
+<!--&lt;!&ndash;    // document.write(swap(5,10))&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;    // document.write('<br>');&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;    // document.write(swap(a,b));&ndash;&gt;-->
+<!--&lt;!&ndash;    // document.write("a = " + a + ", b = " + b);&ndash;&gt;-->
+<!--&lt;!&ndash;</script>&ndash;&gt;-->
+<!--</body>-->
+<!--</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>Feet</label>
+<input id="inputFeet" type="number" placeholder="Feet"
+       oninput="feetToMeter(this.value)"
+<!--       onchange="feetToMeter(this.value)">-->
+<p>Meter: <span id="outputMeter"></span></p>
+<label>Meter</label>
+<input id="inputMeter" type="number" placeholder="Meter"
+       oninput="meterToFeet(this.value)"
+<!--       onchange="meterToFeet(this.value)">-->
+<p>Feet: <span id="outputFeet"></span></p>
+<script>
+    function feetToMeter(feet) {
+        feet = parseFloat(feet)
+        document.getElementById('outputMeter').innerHTML = feet*0.305;
+    }
+    function meterToFeet(meter) {
+        meter = parseFloat(meter);
+        document.getElementById('outputFeet').innerHTML = meter*3.279;
+    }
+</script>
+</body>
+</html>
